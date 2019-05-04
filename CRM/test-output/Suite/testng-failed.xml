@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.qa.CRM.Test_Cases.Contacts_Page_Test"/>
+      <class name="com.qa.CRM.Test_Cases.Deals_Page_Test"/>
+      <class name="com.qa.CRM.Test_Cases.Login_Page_Test"/>
+      <class name="com.qa.CRM.Test_Cases.Home_Page_Test"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.qa.CRM.Test_Cases.Deals_Page_Test">
+        <methods>
+          <include name="Test_select_type_drop_down"/>
+          <include name="setup"/>
+          <include name="Test_verify_page_title"/>
+        </methods>
+      </class> <!-- com.qa.CRM.Test_Cases.Deals_Page_Test -->
+      <class name="com.qa.CRM.Test_Cases.Contacts_Page_Test">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.CRM.Test_Cases.Contacts_Page_Test -->
+      <class name="com.qa.CRM.Test_Cases.Home_Page_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="Test_verifyuserlabel"/>
+          <include name="Test_clickon_deals_link"/>
+          <include name="Test_clickon_contacts_link"/>
+          <include name="Test_verifypagetitle"/>
+        </methods>
+      </class> <!-- com.qa.CRM.Test_Cases.Home_Page_Test -->
+      <class name="com.qa.CRM.Test_Cases.Login_Page_Test">
+        <methods>
+          <include name="test_Login"/>
+          <include name="setup"/>
+          <include name="test_loginTitle"/>
+        </methods>
+      </class> <!-- com.qa.CRM.Test_Cases.Login_Page_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
